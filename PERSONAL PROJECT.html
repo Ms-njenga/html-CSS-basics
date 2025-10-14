@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .face {
+      width: 200px;
+      height: 200px;
+      background: peru;
+      border-radius: 50%;
+      position: relative;
+      margin: 40px auto;
+    }
+
+    .eye {
+      width: 30px;
+      height: 30px;
+      background: black;
+      border-radius: 50%;
+      position: absolute;
+      top: 50px;
+    }
+
+    .eye.left {
+      left: 40px;
+    }
+
+    .eye.right {
+      right: 40px;
+    }
+
+    .smile {
+      width: 100px;
+      height: 50px;
+      border-bottom: 5px solid black;
+      border-radius: 0 0 50px 50px;
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="face">
+    <div class="eye left"></div>
+    <div class="eye right"></div>
+    <div class="smile"></div>
+  </div>
+
+</body>
+</html>
